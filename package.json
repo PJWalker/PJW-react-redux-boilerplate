@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "",
   "browserslist": [
-    "cover 90% in AU"
+    ">2% in AU"
   ],
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
