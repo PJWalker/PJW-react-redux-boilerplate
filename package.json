@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "React+Redux+Webpack+Babel+Mocha+Chai. There are many packages like it, but this one is mine.",
   "main": "index.js",
-  "repository": "",
+  "repository": "https://github.com/PJWalker/PJW-react-redux-boilerplate.git",
   "browserslist": [
     ">2% in AU"
   ],
