@@ -1,7 +1,7 @@
 {
   "name": "pjw-react-redux-boilerplate",
   "version": "0.0.0",
-  "description": "React+Redux+Webpack+Babel+Mocha+Chai. There are many packages like it, but this one is mine.",
+  "description": "React+Redux+Webpack+Babel. There are many packages like it, but this one is mine.",
   "main": "index.js",
   "repository": "https://github.com/PJWalker/PJW-react-redux-boilerplate.git",
   "browserslist": [
@@ -9,8 +9,11 @@
   ],
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "test": "jest ./test",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "setupTestFrameworksScriptFile": "./test/enzyme.setup.js"
   },
   "author": "Paul J Walker",
   "license": "ISC",
@@ -18,12 +21,19 @@
     "babel-loader": "7.x",
     "babel-preset-env": "1.x",
     "babel-preset-react": "6.x",
-    "chai": "4.x",
-    "jsdom": "11.x",
-    "mocha": "5.x",
     "webpack": "4.x",
     "webpack-cli": "2.x",
-    "webpack-dev-server": "3.x"
+    "webpack-dev-server": "3.x",
+    "html-webpack-plugin": "3.x",
+    "clean-webpack-plugin": "0.x",
+    "jest": "23.x",
+    "enzyme": "3.x",
+    "enzyme-adapter-react-16": "1.x",
+    "react-test-renderer": "16.x",
+    "sass-loader": "7.x",
+    "node-sass": "4.x",
+    "style-loader": "0.x",
+    "css-loader": "0.x"
   },
   "dependencies": {
     "lodash": "4.x",
